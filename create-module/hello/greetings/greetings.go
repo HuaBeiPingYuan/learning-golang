@@ -6,7 +6,7 @@ import (
 	"math/rand"
 )
 
-func Hello(name string) (string, error) {
+func hello(name string) (string, error) {
 	if name == "" {
 		return "", errors.New("empty name")
 	}
@@ -26,7 +26,7 @@ func randomFormat() string {
 func Hellos(names []string) (map[string]string, error) {
 	messages := make(map[string]string)
 	for _, name := range names {
-		message, err := Hello(name)
+		message, err := hello(name)
 		if err != nil {
 			return nil, err
 		}

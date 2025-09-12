@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"example.com/greetings"
+	greetings "example.com/hello/greetings"
 )
 
 func main() {
@@ -19,4 +19,3 @@ func main() {
 	fmt.Println(messages)
 
 }
-
